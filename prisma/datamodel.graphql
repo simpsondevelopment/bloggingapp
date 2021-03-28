@@ -5,8 +5,6 @@ type User {
   password: String!
   posts: [Post!]! @relation(name: "PostToUser", onDelete: CASCADE)
   comments: [Comment!]! @relation(name: "CommentToUser", onDelete: CASCADE)
-  created_at: DateTime!
-  updated_at: DateTime!
 }
 
 type Post {

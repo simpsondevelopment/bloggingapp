@@ -28,7 +28,6 @@ type AuthPayload {
 input CreateUserInput {
   name: String!
   email: String!
-  age: Int
   password: String!
 }
 
