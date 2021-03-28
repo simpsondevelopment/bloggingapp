@@ -1,7 +1,7 @@
 import jwt from "jsonwebtoken";
 
 const generateToken = (userId) => {
-  return jwt.sign({ userId }, "thisissecret", {
+  return jwt.sign({ userId }, process.env.PRISMA_JWT_SECRET, {
     expiresIn: "7 days",
   });
 };
