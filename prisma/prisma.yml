@@ -1,3 +1,3 @@
 endpoint: ${env:PRISMA_ENDPOINT}
 datamodel: datamodel.graphql
-secret: Liverp@@l11
+secret: ${env:PRISMA_SECRET}
